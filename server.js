@@ -34,6 +34,7 @@ const corsOptions = function(req, res, next) {
     return next();
 };
 
+app.use(corsOptions);
 
 app.get('/', (req, res) => {
     res.render('home', {
